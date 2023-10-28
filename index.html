@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="popup">
+        <div class="main-content">
+          <div class="content">
+            <h2 class="heading">Stay updated!</h2>
+            <p class="description">Join 60,000+ product managers receiving monthly updates on:</p>
+            <div class="icon-container">
+              <div class="icon-content">
+                <img
+                  class="tick-icon"
+                  src="./assets/images/icon-list.png"
+                  alt="icon"
+                />
+                <p class="icon-description">Product discovery and building what matters</p>
+              </div>
+              <div class="icon-content">
+                <img
+                  class="tick-icon"
+                  src="./assets/images/icon-list.png"
+                  alt="icon"
+                />
+                <p class="icon-description">Measuring to ensure updates are a success</p>
+              </div>
+              <div class="icon-content">
+                <img
+                  class="tick-icon"
+                  src="./assets/images/icon-list.png"
+                  alt="icon"
+                />
+                <p class="icon-description">And much more!</p>
+              </div>
+            </div>
+            <div class="email-container">
+              <div class="messagesection">
+           <p class="email">Email address</p>
+           <p id="errormessage">valid email is required</p>
+           </div>
+          <input type="email"  name="email" placeholder="email@company.com" id="email-field">
+          <button class="Subscribe-button" onclick="validateEmail()">Subscribe to monthly newsletter</button>
+          </div>
+          </div>
+          
+           
+          <div>
+            <img
+              class="desktopImg"
+              src="./assets/images/illustration-sign-up-desktop.png"
+              alt="illustration-sign-up-desktop"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sign-up form start -->
+
+    <!-- Stay updated!
+
+  Join 60,000+ product managers receiving monthly updates on:
+
+  Product discovery and building what matters
+  Measuring to ensure updates are a success
+  And much more!
+
+  Email address
+  email@company.com -->
+
+    <!-- Subscribe to monthly newsletter
+
+  Sign-up form end -->
+
+    <!-- Success message start -->
+
+    <!-- Thanks for subscribing!
+
+  A confirmation email has been sent to ash@loremcompany.com. 
+  Please open it and click the button inside to confirm your subscription.
+
+  Dismiss message -->
+
+    <!-- Success message end -->
+  </body>
+</html>

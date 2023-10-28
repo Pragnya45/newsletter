@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-color: hsl(235, 18%, 26%);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.popup {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  width: 60%;
+  position: absolute;
+  padding: 1rem;
+}
+.main-content {
+  display: flex;
+  gap: 4rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+.desktopImg {
+  height: 98%;
+  width: 100%;
+  background-image: url("./assets/images/illustration-sign-up-desktop.png");
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat;
+}
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.icon-content {
+  display: flex;
+  gap: 1rem;
+}
+.heading {
+  font-size: 40px;
+  font-family: "Roboto";
+  font-weight: 700;
+  color: hsl(234, 29%, 20%);
+}
+.description {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.icon-description {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.email-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.messagesection {
+  display: flex;
+  justify-content: space-between;
+}
+#errormessage {
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: 400;
+  color: hsl(4, 100%, 67%);
+  margin-right: 30px;
+  display: none;
+}
+.email {
+  font-size: 1rem;
+  color: hsl(234, 29%, 20%);
+  font-family: "Roboto";
+  font-weight: 700;
+}
+
+#email-field {
+  height: 3rem;
+  border-radius: 7px;
+  border: 1px solid black;
+  width: 91%;
+  color: hsl(234, 29%, 20%);
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+#email-field::placeholder {
+  color: hsl(231, 7%, 60%);
+  font-size: 14px;
+  font-family: "Roboto";
+  padding-left: 1.5rem;
+}
+.Subscribe-button {
+  height: 3rem;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  font-family: "Roboto";
+  font-weight: 700;
+  border-radius: 7px;
+  width: 94.5%;
+  margin-top: 1rem;
+}
+.Subscribe-button:hover {
+  background-color: hsl(4, 100%, 67%);
+  border: none;
+  box-shadow: 0 0 10px hsl(4, 100%, 67%);
+}
+
+.success-popup {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  width: 22%;
+
+  position: absolute;
+
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+}
+.tick-img {
+  width: 3rem;
+  height: 3rem;
+}
+.thanks-heading {
+  font-size: 40px;
+  font-family: "Roboto";
+  font-weight: 700;
+  color: hsl(234, 29%, 20%);
+}
+.information {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1rem;
+  color: hsl(234, 29%, 20%);
+}
+.email-placeholder {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 1rem;
+  color: hsl(234, 29%, 20%);
+}
+.dismiss-button {
+  height: 3rem;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  font-family: "Roboto";
+  font-weight: 700;
+  border-radius: 7px;
+  width: 94.5%;
+  margin-top: 1rem;
+}
+.dismiss-button:hover {
+  background-color: hsl(4, 100%, 67%);
+  border: none;
+  box-shadow: 0 0 10px hsl(4, 100%, 67%);
+}
+
+@media screen and (max-width: 376px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    margin: 0;
+    padding: 0;
+
+    background-color: hsl(0, 0%, 100%);
+  }
+  .popup {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 100%);
+    background-size: cover;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+  }
+  .main-content {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  .desktopImg {
+    content: url("./assets/images/illustration-sign-up-mobile.png");
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .content {
+    gap: 0.8rem;
+    padding: 0rem 2rem 0rem 1.5rem;
+  }
+  .heading {
+    font-size: 35px;
+  }
+  .description {
+    font-size: 14px;
+    color: hsl(234, 29%, 20%);
+    width: 95%;
+  }
+  .icon-description {
+    font-size: 14px;
+  }
+  .tick-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .icon-content {
+    width: 95%;
+  }
+  #email-field {
+    height: 2.5rem;
+    border: 1.5px solid black;
+    width: 95%;
+    color: hsl(234, 29%, 20%);
+    font-size: 1rem;
+  }
+  .Subscribe-button {
+    height: 2.5rem;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    font-size: 0.8rem;
+    width: 100%;
+    margin-top: 0px;
+  }
+  .success-popup {
+    top: 15%;
+    left: 0%;
+    width: 80%;
+    height: 75%;
+    padding-bottom: 0rem;
+  }
+  .dismiss-button {
+    margin-top: 11rem;
+  }
+}
